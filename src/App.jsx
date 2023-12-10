@@ -10,14 +10,16 @@ function App() {
   const [filteredData, setFilteredData] = useState([]);
 
   const saveData = () => {
-    if (todos.length) {
+    if (todos && todos.length) {
       localStorage.setItem("todos", JSON.stringify(todos));
     }
   };
 
   const loadData = () => {
     const storedTodos = JSON.parse(localStorage.getItem("todos"));
+    if (storedTodos && storedTodos.length) {
       setTodos(storedTodos);
+    }
   };
 
   useEffect(() => {

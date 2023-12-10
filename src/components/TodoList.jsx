@@ -20,7 +20,7 @@ function TodoList({ todos, setTodos,filteredData }) {
         }}
         className={scrollbar}
       >
-        {filteredData.map((todo) => (
+        {filteredData && filteredData.map((todo) => (
           <TodoItem
             key={todo.id}
             todo={todo}
