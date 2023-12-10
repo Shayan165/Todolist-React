@@ -17,9 +17,7 @@ function App() {
 
   const loadData = () => {
     const storedTodos = JSON.parse(localStorage.getItem("todos"));
-    if (storedTodos.length) {
       setTodos(storedTodos);
-    }
   };
 
   useEffect(() => {
