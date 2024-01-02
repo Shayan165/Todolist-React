@@ -28,6 +28,7 @@ function App() {
 
   return (
     <>
+    <h1 style={{textAlign:"center", marginTop:"10rem"}}><img src="https://w7.pngwing.com/pngs/670/265/png-transparent-checkmark-done-exam-list-pencil-todo-xomo-basics-icon.png" width="50"/> Todo List</h1>
       <div className="borderstyle">
         <Form
           inputTxt={inputTxt}
